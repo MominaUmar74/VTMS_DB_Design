@@ -1,20 +1,27 @@
+# **Vehicle Transportation Management System (VTMS)**
 
-# Vehicle Transportation Management System (VTMS)
-
-
-
-
-
-Department of Computer Science
-Namal University, Mianwali
+![Course](https://img.shields.io/badge/Course-Database%20Systems-blue)
+![Milestone](https://img.shields.io/badge/Milestone-CCP--3-success)
+![Database](https://img.shields.io/badge/Database-MySQL-orange)
+![Backend](https://img.shields.io/badge/Backend-Node.js-green)
+![Frontend](https://img.shields.io/badge/Frontend-React.js-blue)
+![Normalization](https://img.shields.io/badge/Normalization-3NF-brightgreen)
+![Status](https://img.shields.io/badge/Project%20Status-Completed-brightgreen)
 
 ---
 
-## Project Overview
+## **Database Systems – CCP-3 Project**
 
-The Vehicle Transportation Management System (VTMS) is a comprehensive transportation management platform developed using modern web technologies and a fully normalized relational database design. The system automates shipment processing, fleet management, payment handling, invoice generation, delivery verification, and company logistics operations.
+**Department of Computer Science**
+**Namal University, Mianwali**
 
-The system replaces traditional manual record-keeping with a centralized database-driven platform that supports vehicle booking, shipment tracking, billing, secure payments, and administrative control.
+---
+
+## **Project Overview**
+
+The **Vehicle Transportation Management System (VTMS)** is a comprehensive transportation management platform developed using modern web technologies and a fully normalized relational database design. The system automates shipment processing, fleet management, payment handling, invoice generation, delivery verification, and company logistics operations.
+
+VTMS improves operational efficiency, reduces human error, enhances transparency, and enables real-time coordination among customers, transport managers, finance departments, and system administrators.
 
 ---
 
@@ -31,115 +38,31 @@ The system replaces traditional manual record-keeping with a centralized databas
 ## **Course & Project Information**
 
 - **Course:** Database Systems
-- **Project Type:**  Database Implementation
+- **Project Type:** CCP-3 – Complete Database Implementation
 - **Database:** MySQL
 - **Backend:** Node.js & Express.js
 - **Frontend:** React.js
 - **API Integration:** OpenRouteService
 - **Normalization:** Third Normal Form (3NF)
+- **Version Control:** Git & GitHub
 
 ---
 
-# **CCP-3 Project Completion Summary**
+# **CCP-3 – Database Implementation**
 
-The CCP-3 milestone focused on converting the conceptual database design into a fully implemented and operational system. This phase included database implementation, normalization verification, frontend development, backend development, API integration, database programmability, and business rule enforcement.
+CCP-3 focuses on converting the conceptual database design into a fully implemented and operational system. This phase includes database implementation, normalization verification, frontend development, backend development, API integration, database programmability, and business rule enforcement.
 
----
+### Key Deliverables
 
-# **Major Accomplishments**
-
-### Database Engineering
-- ✅ Entity Relationship Diagram (ERD) Design
-- ✅ Relational Schema Development
-- ✅ Functional Dependency Analysis
-- ✅ Candidate Key Identification
-- ✅ Database Normalization up to Third Normal Form (3NF)
-- ✅ Referential Integrity Implementation
-- ✅ Constraint Enforcement
-
-### Application Development
-- ✅ React.js Frontend
-- ✅ Node.js Backend
-- ✅ Express.js REST APIs
-- ✅ MySQL Database Connectivity
-- ✅ OpenRouteService Integration
-
-### Database Programmability
-- ✅ 19 Database Triggers
-- ✅ 4 Stored Procedures
-- ✅ Automated Business Rule Enforcement
-- ✅ Workflow Automation
-
-### Testing and Validation
-- ✅ API Testing using Thunder Client
-- ✅ Database Testing
-- ✅ Business Rule Verification
-- ✅ CRUD Operations Validation
+- Entity Relationship Diagram (ERD) Design
+- Relational Schema Development
+- Functional Dependency Analysis
+- Candidate Key Identification
+- Database Normalization up to Third Normal Form (3NF)
+- Referential Integrity Implementation
+- Constraint Enforcement
 
 ---
-
-# **Project Statistics**
-
-| Component | Quantity |
-| --------- | -------- |
-| Database Tables | 15 |
-| Entities | 15 |
-| Triggers | 19 |
-| Stored Procedures | 4 |
-| Functional Dependencies | 40+ |
-| Normal Form Achieved | 3NF |
-| Frontend Modules | 6+ |
-| Backend Modules | 8+ |
-| API Endpoints | Multiple |
-| External APIs | 1 (OpenRouteService) |
-
----
-
-# **System Architecture**
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                                                                 │
-│                      PRESENTATION LAYER                         │
-│                    ┌─────────────────────┐                      │
-│                    │     React.js UI     │                      │
-│                    │   (Frontend Client) │                      │
-│                    └──────────┬──────────┘                      │
-│                               │                                 │
-│                               │ HTTP/REST                       │
-│                               ▼                                 │
-│                      APPLICATION LAYER                          │
-│                    ┌─────────────────────┐                      │
-│                    │  Node.js + Express  │                      │
-│                    │    (Backend API)    │                      │
-│                    └──────────┬──────────┘                      │
-│                               │                                 │
-│              ┌────────────────┼────────────────┐               │
-│              │                │                │               │
-│              ▼                ▼                ▼               │
-│     ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
-│     │   MySQL DB   │  │ OpenRoute    │  │  Thunder     │       │
-│     │ (Data Layer) │  │ Service API  │  │  Client      │       │
-│     └──────────────┘  └──────────────┘  └──────────────┘       │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
-
----
-
-# **Technology Stack**
-
-| Category | Technology |
-| -------- | ---------- |
-| Frontend | React.js |
-| Backend | Node.js |
-| Framework | Express.js |
-| Database | MySQL |
-| API Testing | Thunder Client |
-| Route Services | OpenRouteService API |
-| IDE | Visual Studio Code |
-| Database Tool | MySQL Workbench |
-| Version Control | GitHub |
 
 ---
 
@@ -172,29 +95,29 @@ The CCP-3 milestone focused on converting the conceptual database design into a 
 ## Implemented Triggers (19)
 
 <details>
-<summary><b>📋 Click to View Complete Trigger List</b></summary>
+<summary><b>Click to View Complete Trigger List</b></summary>
 
 | # | Trigger Name | Purpose |
 | - | ------------ | ------- |
-| 1 | trg_generate_tracking_id | Auto-generates unique tracking IDs for shipments |
+| 1 | trg_generate_tracking_id | Auto-generates unique tracking IDs |
 | 2 | trg_generate_invoice_number | Creates sequential invoice numbers |
-| 3 | trg_calculate_delivery_charges | Computes delivery charges based on distance |
+| 3 | trg_calculate_delivery_charges | Computes charges based on distance |
 | 4 | trg_create_delivery_verification | Creates delivery verification record |
 | 5 | trg_prevent_status_regression | Prevents backward status changes |
-| 6 | trg_log_shipment_status | Logs all status changes to history |
-| 7 | trg_update_vehicle_status | Updates vehicle availability status |
-| 8 | trg_update_driver_status | Updates driver availability status |
-| 9 | trg_update_truck_status_on_assignment | Updates truck status when assigned |
-| 10 | trg_truck_load_on_shipment_assign | Manages truck load capacity on assignment |
-| 11 | trg_truck_load_on_shipment_done | Updates truck load on completion |
+| 6 | trg_log_shipment_status | Logs all status changes |
+| 7 | trg_update_vehicle_status | Updates vehicle availability |
+| 8 | trg_update_driver_status | Updates driver availability |
+| 9 | trg_update_truck_status_on_assignment | Updates truck status |
+| 10 | trg_truck_load_on_shipment_assign | Manages truck load capacity |
+| 11 | trg_truck_load_on_shipment_done | Updates load on completion |
 | 12 | trg_block_full_truck_assignment | Prevents assignment to full trucks |
-| 13 | trg_auto_generate_invoice | Automatically generates invoice on shipment creation |
-| 14 | trg_deduct_wallet_balance | Deducts wallet balance for payments |
-| 15 | trg_block_inactive_company_shipment | Blocks shipments for inactive companies |
-| 16 | trg_notify_admin_new_company | Alerts admin on new company registration |
+| 13 | trg_auto_generate_invoice | Auto-generates invoice |
+| 14 | trg_deduct_wallet_balance | Deducts wallet balance |
+| 15 | trg_block_inactive_company_shipment | Blocks inactive company shipments |
+| 16 | trg_notify_admin_new_company | Alerts admin on registration |
 | 17 | trg_calculate_cancellation_charge | Calculates cancellation fees |
-| 18 | trg_apply_cancellation_on_approval | Processes cancellation upon approval |
-| 19 | trg_notify_finance_cod_payment | Notifies finance department for COD payments |
+| 18 | trg_apply_cancellation_on_approval | Processes cancellation |
+| 19 | trg_notify_finance_cod_payment | Notifies finance for COD |
 
 </details>
 
@@ -204,9 +127,9 @@ The CCP-3 milestone focused on converting the conceptual database design into a 
 
 | Procedure | Purpose |
 | --------- | ------- |
-| sp_update_user_password | Updates Admin/Transport Manager/Finance Manager passwords |
-| sp_update_company_password | Updates Company account password |
-| sp_resolve_cancellation | Processes cancellation requests with fee calculation |
+| sp_update_user_password | Updates Admin/TM/FM passwords |
+| sp_update_company_password | Updates company password |
+| sp_resolve_cancellation | Processes cancellation requests |
 | sp_approve_cod_payment | Approves Cash on Delivery payments |
 
 ---
@@ -220,71 +143,61 @@ The system integrates **OpenRouteService API** for:
 - Delivery Cost Computation based on distance and vehicle type
 - Transportation Planning optimization
 
-The API was selected because it provides reliable routing functionality without the cost limitations associated with commercial GPS APIs.
-
 ---
 
 # **Security Features**
 
-- Password Hashing using bcrypt
-- Authentication Controls for role-based access
-- Role-Based Access Control (RBAC) – Admin, Transport Manager, Finance Manager, Company, Customer
-- Input Validation on all API endpoints
-- Secure Database Access with connection pooling
-- Protected API Endpoints with JWT authentication
+- Password Hashing (bcrypt)
+- Authentication Controls
+- Role-Based Access Control (RBAC)
+- Input Validation
+- Secure Database Access
+- Protected API Endpoints (JWT)
 
 ---
 
-# **Repository Structure**
+# **Project Statistics**
 
-```
-VTMS-Database-Project/
-│── Database/
-│   ├── Schema/
-│   ├── Triggers/
-│   └── Stored_Procedures/
-│── Backend/
-│   ├── Controllers/
-│   ├── Models/
-│   ├── Routes/
-│   └── Utils/
-│── Frontend/
-│   ├── Components/
-│   ├── Pages/
-│   └── Services/
-│── Documentation/
-│   ├── ERD/
-│   ├── Normalization/
-│   └── Reports/
-│── README.md
-```
+| Component | Quantity |
+| --------- | -------- |
+| Database Tables | 15 |
+| Entities | 15 |
+| Triggers | 19 |
+| Stored Procedures | 4 |
+| Functional Dependencies | 40+ |
+| Normal Form Achieved | 3NF |
+| Frontend Modules | 6+ |
+| Backend Modules | 8+ |
+| External APIs | 1 |
 
 ---
 
-# **Project Outcome**
+# **Technology Stack**
 
-The Vehicle Transportation Management System successfully demonstrates:
+| Category | Technology |
+| -------- | ---------- |
+| Frontend | React.js |
+| Backend | Node.js |
+| Framework | Express.js |
+| Database | MySQL |
+| API Testing | Thunder Client |
+| Route Services | OpenRouteService |
+| IDE | VS Code |
+| Database Tool | MySQL Workbench |
 
-- Advanced Database Design principles
-- Relational Database Implementation with MySQL
-- Full-Stack Web Development integration
-- Database Programmability through triggers and stored procedures
-- Business Rule Automation at database level
-- External API Integration for routing services
-- Software Engineering Best Practices
+---
 
-The final system provides a **scalable and maintainable** vehicle management platform capable of handling transportation operations efficiently while maintaining database integrity and operational reliability.
 
 ---
 
 ## **Project Status**
 
-- ✔ ERD & Relational Schema – Completed
-- ✔ Database Normalization to 3NF – Completed
-- ✔ 19 Triggers Implemented – Completed
+- ✔ ERD & Schema – Completed
+- ✔ Normalization to 3NF – Completed
+- ✔ 19 Triggers – Completed
 - ✔ 4 Stored Procedures – Completed
-- ✔ Frontend Development – Completed
-- ✔ Backend Development – Completed
+- ✔ Frontend – Completed
+- ✔ Backend – Completed
 - ✔ API Integration – Completed
 - ✔ CCP-3 Final Submission – Completed
 
@@ -292,7 +205,7 @@ The final system provides a **scalable and maintainable** vehicle management pla
 
 ### **Final Note**
 
-This repository contains the **complete database implementation, backend APIs, frontend application, and all supporting documentation** for the Database Systems CCP-3 project. The system follows a fully normalized 3NF design with comprehensive database programmability features.
+This repository contains the **complete database implementation, backend APIs, frontend application, and all documentation** for the Database Systems CCP-3 project, following a fully normalized 3NF design with comprehensive database programmability.
 
 ---
 
@@ -302,6 +215,6 @@ This repository contains the **complete database implementation, backend APIs, f
 
 **CCP-3 Final Submission**
 
-⭐ Database Systems Project – Designed • Implemented • Documented ⭐
+⭐ Designed • Implemented • Documented ⭐
 
 </div>
