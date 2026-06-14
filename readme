@@ -1,1 +1,252 @@
+<div align="center">
+
+# 🚚 Vehicle Transportation Management System (VTMS)
+
+
+
+<p align="center">
+<img src="https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+<img src="https://img.shields.io/badge/Backend-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white">
+<img src="https://img.shields.io/badge/Framework-Express.js-000000?style=for-the-badge&logo=express&logoColor=white">
+<img src="https://img.shields.io/badge/Frontend-React.js-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+<img src="https://img.shields.io/badge/API-OpenRouteService-FF8C00?style=for-the-badge">
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Status-Completed-success?style=flat-square">
+<img src="https://img.shields.io/badge/Submission-CCP--3-blue?style=flat-square">
+<img src="https://img.shields.io/badge/Normalization-3NF-brightgreen?style=flat-square">
+<img src="https://img.shields.io/badge/Triggers-19-orange?style=flat-square">
+<img src="https://img.shields.io/badge/Stored%20Procedures-4-purple?style=flat-square">
+</p>
+
+---
+
+### 📌 Academic Database Systems Project
+
+A comprehensive transportation management platform developed using modern web technologies and a fully normalized relational database design. The system automates shipment processing, fleet management, payment handling, invoice generation, delivery verification, and company logistics operations.
+
+</div>
+
+---
+
+# 🎯 CCP-3 Project Completion Summary
+
+The CCP-3 milestone focused on converting the conceptual database design into a fully implemented and operational system. This phase included database implementation, normalization verification, frontend development, backend development, API integration, database programmability, and business rule enforcement.
+
+---
+
+# 🏆 Major Accomplishments
+
+### Database Engineering
+
+* ✅ Entity Relationship Diagram (ERD) Design
+* ✅ Relational Schema Development
+* ✅ Functional Dependency Analysis
+* ✅ Candidate Key Identification
+* ✅ Database Normalization up to Third Normal Form (3NF)
+* ✅ Referential Integrity Implementation
+* ✅ Constraint Enforcement
+
+### Application Development
+
+* ✅ React.js Frontend
+* ✅ Node.js Backend
+* ✅ Express.js REST APIs
+* ✅ MySQL Database Connectivity
+* ✅ OpenRouteService Integration
+
+### Database Programmability
+
+* ✅ 19 Database Triggers
+* ✅ 4 Stored Procedures
+* ✅ Automated Business Rule Enforcement
+* ✅ Workflow Automation
+
+### Testing and Validation
+
+* ✅ API Testing using Thunder Client
+* ✅ Database Testing
+* ✅ Business Rule Verification
+* ✅ CRUD Operations Validation
+
+---
+
+# 🗂️ Project Statistics
+
+| Component               | Quantity |
+| ----------------------- | -------- |
+| Database Tables         | 15       |
+| Entities                | 15       |
+| Triggers                | 19       |
+| Stored Procedures       | 4        |
+| Functional Dependencies | 40+      |
+| Normal Form Achieved    | 3NF      |
+| Frontend Modules        | 6+       |
+| Backend Modules         | 8+       |
+| API Endpoints           | Multiple |
+| External APIs           | 1        |
+
+---
+
+# 🏗️ System Architecture
+
+```text
+┌────────────────────────────┐
+│        React.js UI         │
+│     Presentation Layer     │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│  Node.js + Express.js API  │
+│     Application Layer      │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│         MySQL DB           │
+│         Data Layer         │
+└─────────────┬──────────────┘
+              │
+              ▼
+┌────────────────────────────┐
+│    OpenRouteService API    │
+│ Distance & Route Services  │
+└────────────────────────────┘
+```
+
+---
+
+# 🛠️ Technology Stack
+
+| Category        | Technology           |
+| --------------- | -------------------- |
+| Frontend        | React.js             |
+| Backend         | Node.js              |
+| Framework       | Express.js           |
+| Database        | MySQL                |
+| API Testing     | Thunder Client       |
+| Route Services  | OpenRouteService API |
+| IDE             | Visual Studio Code   |
+| Database Tool   | MySQL Workbench      |
+| Version Control | GitHub               |
+
+---
+
+# 🗄️ Database Components
+
+## Core Entities
+
+* User
+* Driver
+* Company
+* EndCustomer
+* VehicleCategory
+* Vehicle
+* Truck
+* Shipment
+* DriverAssignment
+* Agreement
+* Invoice
+* Payment
+* DeliveryVerification
+* ShipmentStatusLog
+* CancellationRequest
+
+---
+
+# ⚡ Database Automation
+
+## Implemented Triggers (19)
+
+<details>
+<summary><b>Click to View Trigger List</b></summary>
+
+* trg_generate_tracking_id
+* trg_generate_invoice_number
+* trg_calculate_delivery_charges
+* trg_create_delivery_verification
+* trg_prevent_status_regression
+* trg_log_shipment_status
+* trg_update_vehicle_status
+* trg_update_driver_status
+* trg_update_truck_status_on_assignment
+* trg_truck_load_on_shipment_assign
+* trg_truck_load_on_shipment_done
+* trg_block_full_truck_assignment
+* trg_auto_generate_invoice
+* trg_deduct_wallet_balance
+* trg_block_inactive_company_shipment
+* trg_notify_admin_new_company
+* trg_calculate_cancellation_charge
+* trg_apply_cancellation_on_approval
+* trg_notify_finance_cod_payment
+
+</details>
+
+---
+
+## Implemented Stored Procedures (4)
+
+| Procedure                  | Purpose                         |
+| -------------------------- | ------------------------------- |
+| sp_update_user_password    | Updates Admin/TM/FM Passwords   |
+| sp_update_company_password | Updates Company Password        |
+| sp_resolve_cancellation    | Processes Cancellation Requests |
+| sp_approve_cod_payment     | Approves COD Payments           |
+
+---
+
+# 🌍 OpenRouteService Integration
+
+The system integrates OpenRouteService API for:
+
+* Route Generation
+* Distance Calculation
+* Delivery Cost Computation
+* Transportation Planning
+
+The API was selected because it provides reliable routing functionality without the cost limitations associated with commercial GPS APIs.
+
+---
+
+# 🔒 Security Features
+
+* Password Hashing
+* Authentication Controls
+* Role-Based Access Control (RBAC)
+* Input Validation
+* Secure Database Access
+* Protected API Endpoints
+
+---
+
+# 📊 Project Outcome
+
+The Vehicle Transportation Management System successfully demonstrates:
+
+* Advanced Database Design
+* Relational Database Implementation
+* Full-Stack Web Development
+* Database Programmability
+* Business Rule Automation
+* API Integration
+* Software Engineering Best Practices
+
+The final system provides a scalable and maintainable vehicle management platform capable of handling transportation operations efficiently while maintaining database integrity and operational reliability.
+
+---
+
+<div align="center">
+
+### 🚚 Vehicle Transportation Management System (VTMS)
+
+**CCP-3 Final Submission**
+
+Database Systems Project
+
+⭐ Designed • Implemented • Documented ⭐
+
+</div>
 
